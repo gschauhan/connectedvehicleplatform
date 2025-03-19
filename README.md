@@ -21,41 +21,41 @@ This repository contains the source code and infrastructure for the Connected Ve
 - `machine-learning`: ML pipelines for predictive maintenance and anomaly detection.
 - `monitoring-and-alerting`: Observability stack configurations.
 
-connected-vehicle-platform/
-│
-├── README.md                # Solution configuration guide
-├── .gitignore               # Git ignore file for sensitive files and build artifacts
-├── LICENSE                  # License information (optional)
-│
-├── infrastructure/          # Infrastructure as Code (IaC) scripts
-│   ├── terraform/           # Terraform scripts for Azure resources
-│   └── arm-templates/       # ARM templates for Azure services provisioning
-│
-├── backend/                 # Backend microservices
-│   ├── api-gateway/         # API Gateway service (e.g., NestJS with Azure API Management)
-│   ├── vehicle-service/     # Microservice handling vehicle commands (lock/unlock/start)
-│   └── telemetry-service/   # Microservice for telemetry ingestion and processing
-│
-├── edge/                    # Edge computing modules
-│   ├── iot-edge-modules/    # Azure IoT Edge modules (e.g., telemetry preprocessing)
-│   └── firmware-updater/    # Module for OTA firmware updates
-│
-├── frontend/                # Frontend applications
-│   ├── web-app/             # Web dashboard (React or Next.js)
-│   └── mobile-app/          # Mobile app (React Native)
-│
-├── machine-learning/        # ML models and pipelines
-│   ├── predictive-maintenance/  # Predictive maintenance models (Azure ML pipelines)
-│   └── anomaly-detection/       # Anomaly detection models (Time Series Insights)
-│
-├── monitoring-and-alerting/ # Observability stack configurations
-│   ├── azure-monitor/       # Azure Monitor and Log Analytics queries
-│   └── prometheus-grafana/  # Prometheus + Grafana dashboards (optional)
-│
-└── tests/                   # Test cases for different components
-    ├── unit-tests/
-    ├── integration-tests/
-    └── e2e-tests/
+connected-vehicle-platform <br/>
+│<br/>
+├── README.md                # Solution configuration guide<br/>
+├── .gitignore               # Git ignore file for sensitive files and build artifacts<br/>
+├── LICENSE                  # License information (optional)<br/>
+│<br/>
+├── infrastructure/          # Infrastructure as Code (IaC) scripts<br/>
+│   ├── terraform/           # Terraform scripts for Azure resources<br/>
+│   └── arm-templates/       # ARM templates for Azure services provisioning<br/>
+│<br/>
+├── backend/                 # Backend microservices<br/>
+│   ├── api-gateway/         # API Gateway service (e.g., NestJS with Azure API Management)<br/>
+│   ├── vehicle-service/     # Microservice handling vehicle commands (lock/unlock/start)<br/>
+│   └── telemetry-service/   # Microservice for telemetry ingestion and processing<br/>
+│<br/>
+├── edge/                    # Edge computing modules<br/>
+│   ├── iot-edge-modules/    # Azure IoT Edge modules (e.g., telemetry preprocessing)<br/>
+│   └── firmware-updater/    # Module for OTA firmware updates<br/>
+│<br/>
+├── frontend/                # Frontend applications<br/>
+│   ├── web-app/             # Web dashboard (React or Next.js)<br/>
+│   └── mobile-app/          # Mobile app (React Native)<br/>
+│<br/>
+├── machine-learning/        # ML models and pipelines<br/>
+│   ├── predictive-maintenance/  # Predictive maintenance models (Azure ML pipelines)<br/>
+│   └── anomaly-detection/       # Anomaly detection models (Time Series Insights)<br/>
+│<br/>
+├── monitoring-and-alerting/ # Observability stack configurations<br/>
+│   ├── azure-monitor/       # Azure Monitor and Log Analytics queries<br/>
+│   └── prometheus-grafana/  # Prometheus + Grafana dashboards (optional)<br/>
+│<br/>
+└── tests/                   # Test cases for different components<br/>
+    ├── unit-tests/<br/>
+    ├── integration-tests/<br/>
+    └── e2e-tests/<br/>
 
 ---
 
@@ -111,10 +111,10 @@ az iot edge set-modules --device-id <device-id> --hub-name <iot-hub-name> --cont
 
 
 ## **Configuration**
-Update environment variables in `.env` files located in each service folder:
-AZURE_IOT_HUB_CONNECTION_STRING=<your-iot-hub-connection-string>
-AZURE_KEY_VAULT_URI=<your-key-vault-uri>
-MONGO_DB_CONNECTION_STRING=<your-mongo-db-uri>
+Update environment variables in `.env` files located in each service folder:<br/>
+AZURE_IOT_HUB_CONNECTION_STRING=<your-iot-hub-connection-string><br/>
+AZURE_KEY_VAULT_URI=<your-key-vault-uri><br/>
+MONGO_DB_CONNECTION_STRING=<your-mongo-db-uri><br/>
 
 
 ---
